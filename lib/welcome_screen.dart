@@ -30,17 +30,23 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         fontSize: 30,
                         fontWeight: FontWeight.w600),
                   ),
-                  Text(
-                    '..............................................',
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w400),
+                  Container(
+                    margin: EdgeInsets.only(top: 10),
+                    child: Text(
+                      'Welcoming to our app',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400),
+                    ),
                   ),
                 ],
               ),
             ),
-            Container(),
+            Container(
+              child: Image.network(
+                  'https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?w=740&t=st=1710847114~exp=1710847714~hmac=ac7b5a27948946763a0c0cd1c2a3f00886a2e4c8e293f217376f7503836733de'),
+            ),
             Container(
               child: Column(
                 children: [
