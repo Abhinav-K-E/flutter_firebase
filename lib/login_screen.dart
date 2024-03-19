@@ -18,7 +18,6 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Column(
           children: [
             Container(
-              height: 540,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -42,6 +41,11 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ],
                     ),
+                  ),
+                  Container(
+                    child: Image.network(
+                        width: 300,
+                        'https://img.freepik.com/free-vector/mobile-browsers-concept-illustration_114360-1267.jpg?t=st=1710784978~exp=1710785578~hmac=57588d7978b200ff1ba9b1f2495080e72ea6a09433379c7237d3c38cd8c4b4be'),
                   ),
                   Container(
                     padding: EdgeInsets.symmetric(horizontal: 10),
